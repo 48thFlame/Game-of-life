@@ -15,12 +15,11 @@ func init() {
 }
 
 func main() {
+	b := newBoard()
 	for {
-		b := newBoard()
+		b.update()
 		fmt.Println(b)
 		time.Sleep(timeDelay)
 		callClear()
-		// .Run()
-		// time.Sleep(timeDelay)
 	}
 }
