@@ -5,8 +5,8 @@ import (
 )
 
 const (
-	boardWidth  = 48
-	boardHeight = 12
+	boardWidth  = 128
+	boardHeight = 48
 )
 
 const (

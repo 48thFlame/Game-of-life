@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-const timeDelay = time.Millisecond * 100
+const timeDelay = time.Millisecond * 25
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
@@ -17,9 +17,9 @@ func init() {
 func main() {
 	b := newBoard()
 	for {
-		b.update()
+		callClear()
 		fmt.Println(b)
 		time.Sleep(timeDelay)
-		callClear()
+		b.update()
 	}
 }
